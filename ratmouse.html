@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    class mouse{
+    constructor(name,weight,speed,status){
+        this.name=name;
+        this.weight=weight;
+        this.speed=speed;
+        this.status=status;
+    }
+    speak(){
+        if(this.status="alive"){
+            alert("chit chit")
+        }
+    }
+}
+class cat{
+    constructor(name,weight,speedmax){
+  this.name=name;
+  this.weight=weight;
+  this.speedmax=speedmax;
+    }
+    speak(){
+        alert("meo meo")
+    }
+    catch(mouse){
+        if(this.speedmax>mouse.speed){
+            return mouse;
+    }}
+    catchEat(mouse){
+        if(this.speedmax>mouse.speed){
+      if(mouse.status="alive"){
+            alert("eat mouse")
+        this.weight+=mouse.weight;
+           return this.weight;
+        }
+    }
+        }
+    }
+   
+
+    let mouse1= new mouse("jerry",2,3,"alive")
+    let mouse2= new mouse("huu",3,5,"die")
+    let cat1= new cat("tom",3,4)
+    </script>

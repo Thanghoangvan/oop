@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    class Battery{
+        constructor(number){
+            this.energy=number;
+        }
+        setenergy(number){
+            this.energy=number;
+        }
+        getenery(){
+            return this.energy;
+        }
+        decreaseenergy(){
+            if(this.energy>0){
+                this.energy--
+            }
+        }
+    }
+    let rabbit_battery= new Battery(10)
+    class Flashlamp{
+        constructor(status,My_battery){
+     this.status=status;
+     this.battery=My_battery;
+        }
+        // setbattery(My_battery){
+        //     this.battery=My_battery
+        // }
+       getenergyinfo(){
+        return this.battery.getenery()
+       }
+       light(){
+       if(this.status){
+        alert("Sáng")
+       }
+       else{
+        alert("Tối")
+       }
+       }
+       turnon(){
+        this.status=true;
+        this.battery.decreaseenergy()
+       }
+       turnoff(){
+        this.status=false;
+       }
+
+    }
+    let lamp1= new Flashlamp(false, rabbit_battery)
+    // lamp1.setbattery(rabbit_battery)
+    // document.write(lamp1.getenergyinfo())
+lamp1.light()
+lamp1.turnon()
+document.write(lamp1.getenergyinfo()+"<br>"+lamp1.status)
+</script>

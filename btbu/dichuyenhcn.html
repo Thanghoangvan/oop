@@ -16,14 +16,12 @@
         let ctx=canvas.getContext("2d");
 let flag=1
     class createhcn1{
-      
-        constructor(x,y){
+      constructor(x,y){
             this.x=x
             this.y=y
         }
-       
-            movedown(){
-                ctx.clearRect(this.x,this.y,140,160)
+       movedown(){
+        ctx.clearRect(this.x,this.y,140,160)
         this.y+=10
         
         }
@@ -31,7 +29,6 @@ let flag=1
             ctx.clearRect(this.x,this.y,140,160)
             this.y-=10
         }
-        
         createhcn(){
       ctx.fillStyle='#fa4b2a';   
         ctx.fillRect(this.x, this.y, 140, 160); 
@@ -55,11 +52,7 @@ if( (move1.y<600-160)&&(flag==1)){
     }
 
    }
-  
-  
-  
   move1.createhcn()
-  
 setTimeout(move,10)
   
 }

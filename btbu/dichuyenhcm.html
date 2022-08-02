@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="mycanvas" height="600px" width="500px" style="border:1px solid"></canvas>
+</body>
+</html>
+<script>
+    debugger;
+    let canvas=document.getElementById('mycanvas');
+        let ctx=canvas.getContext("2d");
+let flag=1
+    class createhcn1{
+      
+        constructor(x,y){
+            this.x=x
+            this.y=y
+        }
+       
+            movedown(){
+                ctx.clearRect(this.x,this.y,140,160)
+        this.y+=10
+        
+        }
+        moveup(){
+            ctx.clearRect(this.x,this.y,140,160)
+            this.y-=10
+        }
+        
+        createhcn(){
+      ctx.fillStyle='#fa4b2a';   
+        ctx.fillRect(this.x, this.y, 140, 160); 
+     }
+        
+    }
+    let move1= new createhcn1(0,0)
+    move1.createhcn()
+function move(){
+ 
+if( (move1.y<600-160)&&(flag==1)){
+    move1.movedown()
+    if(move1.y>=600-160){
+        flag=2
+    }
+   }
+   else if((flag==2)&& (move1.y>0)){
+    move1.moveup()
+    if(move1.y<=0){
+        flag=1
+    }
+
+   }
+  
+  
+  
+  move1.createhcn()
+  
+setTimeout(move,10)
+  
+}
+move()
+ 
+</script>

@@ -1,0 +1,39 @@
+.style{
+    background-color: red;
+    width: 400px;
+    height: 500px;
+     margin:auto;
+  
+}
+.row{
+    display: flex;
+    flex-grow: 1;
+    /* background-color: blue; */
+}
+/* .gameboarch{
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.playtic{
+flex-grow: 1;
+margin: 5px;
+font-size: 5em;
+font-weight: bold;
+width: 90px;
+height: 90px;
+}
+.title{
+    font-size: 1.8em;
+    text-align: center;
+    color: aqua;
+}
+.reset{
+text-align: center;
+}
+.xbtn{
+    color: brown;
+}
+.obtn{
+    color: blue;
+} */ 

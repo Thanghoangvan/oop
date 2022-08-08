@@ -26,7 +26,7 @@ moveup(){
   this.top-=100
 }}
 ;
-var hero = new hero1('messi.jpg', 20, 30,40, 200);
+var hero = new hero1('cho.jpg', 20, 30,40, 200);
 let flag=1
 function start(){
   debugger;
